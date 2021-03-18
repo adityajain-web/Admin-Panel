@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&display=swap");
+
+/* reset */
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Da 2", cursive;
+  transition: all 0.3s linear;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.bg-common {
+  background-color: rgba(34, 44, 51, 0.6);
+}
+
+.bg-right {
+  background: #383f48;
+}
+
+.nav-link,
+.breadcrumb-item {
+  padding: 10px 0px 10px 30px;
+  color: #bfc0cd;
+}
+
+.nav-link:hover,
+.breadcrumb-item a {
+  color: #fff;
+}
+
+.card {
+  box-shadow: 0 0 8px 2px rgba(250, 250, 250, 0.1);
+}

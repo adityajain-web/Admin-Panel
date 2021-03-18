@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Font-awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <title>Admin Panel</title>
+</head>
+
+<body class="bg-right">
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-10 col-11 mx-auto">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-common">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">User</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Profile Settings</li>
+                    </ol>
+                </nav>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 d-md-block d-none">
+                        <div class="card bg-common card-left">
+                            <div class="card-body">
+                                <nav class="nav d-md-block d-none">
+                                    <a data-toggle="tab" class="nav-link active" aria-current="page" href="#profile">
+                                        <i class="fas fa-user mr-1"></i> Profile</a>
+
+                                    <a data-toggle="tab" class="nav-link" href="#account"><i
+                                            class="fas fa-user-cog mr-1"></i>
+                                        Account Settings</a>
+
+                                    <a data-toggle="tab" class="nav-link" href="#security"><i
+                                            class="fas fa-user-shield mr-1"></i> Security</a>
+
+                                    <a data-toggle="tab" class="nav-link" href="#notification"><i
+                                            class="fas fa-bell mr-1"></i>
+                                        Notification</a>
+
+                                    <a data-toggle="tab" class="nav-link" href="#billing"><i
+                                            class="fas fa-money-check-alt mr-1"></i> Billing</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8 mb-3">
+                        <div class="card">
+                            <div class="card-header border-bottom mb-3 d-md-none">
+                                <ul class="nav nav-tabs card-header-tabs nav-fill">
+                                    <li class="nav-item">
+                                        <a data-toggle="tab" class="nav-link active" aria-current="page"
+                                            href="#profile">
+                                            <i class="fas fa-user mr-1"></i></a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a data-toggle="tab" class="nav-link" href="#account"><i
+                                                class="fas fa-user-cog mr-1"></i></a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a data-toggle="tab" class="nav-link" href="#security"><i
+                                                class="fas fa-user-shield mr-1"></i></a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a data-toggle="tab" class="nav-link" href="#notifiction"><i
+                                                class="fas fa-bell mr-1"></i></a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a data-toggle="tab" class="nav-link" href="#billing"><i
+                                                class="fas fa-money-check-alt mr-1"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- actual which is live start -->
+                            <div class="card-body tab-content border-0 mb-3">
+                                <!-- actual profile data -->
+                                <div class="tab-pane active" id="profile">
+                                    <h6>Your Profile Information</h6>
+                                    <hr>
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <label for="username">Full Name</label>
+                                            <input type="text" class="form-control" id="FullName"
+                                                placeholder="Aditya Jain">
+                                            <small class="form-text text-muted">Please enter your full name.</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="Bio">Your Bio</label>
+                                            <textarea type="text" class="form-control" id="UserBio"
+                                                placeholder="I am MERN Stack Developer." rows="3"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="url">URL</label>
+                                            <input type="url" class="form-control" id="UserUrl"
+                                                placeholder="https://github.com/adityajain-web">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="url">Location</label>
+                                            <input type="text" class="form-control" id="UserLocation"
+                                                placeholder="Pune, Maharashtra, India">
+                                        </div>
+                                        <div class="form-group form-text text-muted small">
+                                            All the fields on this page are optional and can be deleted at any time, and
+                                            by filling them out, you're giving us consent to share this data wherever
+                                            your user profile appears.
+                                        </div>
+                                        <button type="submit" class="btn btn-outline-info">Update Profile</button>
+                                        <button type="Reset" class="btn btn-outline-secondary">Reset Profile</button>
+                                    </form>
+                                </div>
+
+                                <!-- actual account data -->
+                                <div class="tab-pane" id="account">
+                                    <h6>Account Settings</h6>
+                                    <hr>
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <label for="username">Full Name</label>
+                                            <input type="text" class="form-control" id="UserName"
+                                                placeholder="imaditya_jain">
+                                            <small class="form-text text-muted">After changing username, your old
+                                                username
+                                                will be available for anyone else to claim.</small>
+                                        </div>
+                                    </form>
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <label for="Delete Account" class="form-label text-danger">Delete
+                                                Account</label>
+                                            <p class="text-muted">Once you delete your account, there is no going back.
+                                                Please be certain.</p>
+                                        </div>
+                                        <button type="submit" class="btn btn-outline-danger">Delete Account</button>
+                                    </form>
+                                </div>
+
+                                <!-- actual security data -->
+                                <div class="tab-pane" id="security">
+                                    <h6>Security Settings</h6>
+                                    <hr>
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <label for="username">Change Password</label>
+                                            <input type="password" class="form-control my-1" autocomplete="Off"
+                                                id="currentPassword" placeholder="Current password">
+                                            <input type="password" class="form-control my-1" autocomplete="Off"
+                                                id="newPassword" placeholder="New password">
+                                            <input type="password" class="form-control my-1" autocomplete="Off"
+                                                id="CNewPassword" placeholder="Confirm new password">
+                                        </div>
+                                    </form>
+                                    <hr>
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <label class="form-label d-block mb-2">Two Factor Authentication</label>
+                                            <button type="submit" class="btn btn-info mb-2">Enable two-factor
+                                                authentication</button>
+                                            <p class="text-muted small">Two-factor authentication adds an additional
+                                                layer of
+                                                security to your account by requiring more than just password to log in.
+                                            </p>
+                                        </div>
+                                    </form>
+                                    <hr>
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <label class="form-label d-block mb-2">Session</label>
+                                            <p class="text-muted small">This is a list of device that you have logged
+                                                into your account. Revoke any session that you do not recognize..
+                                            </p>
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                    <div>
+                                                        <h6>Pune 18.5204° N, 73.8567° E</h6>
+                                                        <p class="text-muted small">Your current session seen in Pune,
+                                                            Maharashtra, India.
+                                                        </p>
+                                                        <button class="btn btn-sm btn-light">More Info</button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- actual notification data -->
+                                <div class="tab-pane" id="notification">
+                                    <h6>Notification Settings</h6>
+                                    <hr>
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <label for="security alert">Security Alert</label>
+                                            <p class="text-muted small">Receive security alerts notification via email.
+                                            </p>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1">Email each time a
+                                                    vulnerability found.</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                <label class="custom-control-label" for="customCheck2">Email a digest
+                                                    summery of vulnerability.</label>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group">
+                                            <label for="SMS Notification">SMS Notification</label>
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                    Comments
+                                                    <div class="custom-control custom-switch">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customSwitch1">
+                                                        <label class="custom-control-label" for="customSwitch1"></label>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Updates from peoples
+                                                    <div class="custom-control custom-switch">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customSwitch2">
+                                                        <label class="custom-control-label" for="customSwitch2"></label>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Reminders
+                                                    <div class="custom-control custom-switch">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customSwitch3">
+                                                        <label class="custom-control-label" for="customSwitch3"></label>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Events
+                                                    <div class="custom-control custom-switch">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customSwitch4">
+                                                        <label class="custom-control-label" for="customSwitch4"></label>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Page you follow
+                                                    <div class="custom-control custom-switch">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customSwitch5">
+                                                        <label class="custom-control-label" for="customSwitch5"></label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- actual billing data -->
+                                <div class="tab-pane" id="billing">
+                                    <h6>Billing Settings</h6>
+                                    <hr>
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <label for="Payment Method" class="form-label d-block">Payment
+                                                Method</label>
+                                            <p class="text-muted small">You have not added a payment method</p>
+                                            <button type="submit" class="btn btn-info mb-2">Add Payment Method</button>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group">
+                                            <label for="Payment Method" class="form-label d-block">Payment
+                                                History</label>
+                                            <div class="border p-3 text-center">
+                                                <p class="text-muted">You have not made any payment.</p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
